@@ -1,0 +1,65 @@
+body
+{
+    text-align: center;
+}
+#welcome {
+    color: #FFFFFF;
+    bottom: 0;
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+#bio {
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.line {
+    height: 6px;
+    background-color: #000;
+    width: 70px;
+    margin: 8px auto;
+}
+#contact iframe
+{
+    width: 100%;
+}
+.contact_1 h3
+{
+    display: inline;
+}
+.contact_1 a
+{
+    text-shadow: none;
+}
+
+
+#videos iframe
+{
+    width: 80%;
+}
+input
+{
+    background: grey;
+}
+.my_nav_bar{
+position:sticky; /*It means that the menu bar will get sticky on the position
+where it is placed.It will always be on the top of the screen even when you
+scroll down the page.*/
+    top:0; /*This means it will start from the top of the website*/
+    z-index: 99999; /*This means it will always be on the top of any other
+element. If we scroll, there are images and various other elements. We do
+not want these other elements to be seen above the menu bar when we
+scroll.*/
+}
+input{
+    background: grey;
+}

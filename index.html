@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Sir Tim Berners-Lee</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!--<nav> is a tag which is used to wrap all the menu items inside it.-->
+    <nav class="navbar-inverse my_nav_bar">
+        <!--navbar-inverse. It is a bootstrap css property. We are using it by
+calling it inside the class of the element. It is used to give the
+background-color and font color to the menu bar. We will add style to my_nav_bar-->
+        <div class="navbar-header">
+            <!--navbar-header. It’s a bootstrap css property called inside the class of the element
+navbar-header is mostly an architectural class.It
+allocates approximately 150px to the left of the navbar to wrap the navbar-brand.
+But the most useful property of the navbar-header is its responsiveness to 100%
+width till 768px (tablet views). It also helps to get the menu item on the left hand
+side.-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <!--navbar-toggle: It is a bootstrap css property and we are using it by calling
+it inside the class of the element. it helps to show the
+button only in tablets and in mobiles when the screen resolution is
+less than 768px horizontally.-->
+                <!--data-toggle="collapse" tells the button that there is something that will be
+opening when the button is clicked.-->
+                <!--data-target="#myNavbar" tells the button that when the button is clicked,
+the div with the id = myNavbar should open.-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <!--Inside the button there is a span with class icon-bar. This is also a
+bootstrap css property and we are using it by calling it inside the class of
+the element.
+This we use to get these three lines-->
+            </button>
+            <a class="navbar-brand" href="#">Perter Parker</a>
+            <!--navbar-brand : This again is a bootstrap css property used to give font color,
+height, margin, font-size and padding to the name of our website-->
+        </div>
+
+        <div class="collapse navbar-collapse" 
+             id="myNavbar">
+            <!--Div - This is used to hold all the menu items.
+collapse : Another bootstrap css property. This property asks the div to hide all the
+items when the screen resolution is in tablet or mobile zone (less than
+768px horizontally).-->
+            <!--navbar-collapse - bootstrap css property. It adds background color, and shows the big
+menu when the screen size is above 768px. And hides when screen is below 768px. It is the whole and soul for the style
+and display of the menu items.-->
+            <!--id="myNavbar" is the identification of the div, that opens this div when the
+element that has data-target="#myNavbar" is clicked. Currently that
+element is the button.-->
+            <ul class="nav navbar-nav">
+                <!--nav, navbar-nav: It’s a bootstrap css property; used to align and style the list items. -->
+                <li><a href="#welcome">HOME</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#writings">WRITINGS</a></li>
+                <li><a href="#aboutMe">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <section id="welcome">
+        <img src="stbl.jpg" class="profile img-circle">
+        <h1>I Am
+            <br>
+            <span id="name">Tim Berners-Lee</span>
+        </h1>
+        <h2> I am the founder of www: World Wide Web</h2>
+    </section>
+
+
+    <section id="bio">
+        <h1>Hi!</h1>
+        <div class="line"></div>
+        <p>Tim Berners-Lee is a software engineer who invented the Internet (or the World Wide Web) in 1989 while at CERN, the European Particle Physics Laboratory. He is director of the World Wide Web Consortium that he founded and a Professor in the Computer Science Department at the University of Oxford. In 2001 he became a Fellow of the Royal Society and in 2004 he was knighted.<br><br>In 1994 Berners-Lee founded the World Wide Web Consortium (W3C) at the Laboratory of Computer Science (LCS) at the Massachusetts Institute of Technology in Boston. It was made up of companies that wanted to work together to create Web standards and also improve the Web. It was quickly agreed that the technology should be free of royalties and patents. Berners-Lee has served as director of this W3C since it was founded. In 1995 Microsoft produced the first version of Internet Explorer and this commercial browser created enormous growth in websites and web users. The Web was first used for e-commerce in 1997.</p>
+    </section>
+
+    <hr>
+    <section id="videos">
+        <h1>Videos</h1>
+        <div class="line"></div>
+        <br>
+        <iframe src="https://www.youtube.com/embed/OM6XIICm_qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1" height="500"> </iframe>
+        <br>
+        <br>
+
+        <iframe height="500" src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video2"></iframe>
+    </section>
+
+    <hr>
+    <section id="work" style="width: 100%;">
+        <h1>WORK</h1>
+        <div class="line"></div>
+        <iframe class="work_iframe" height="1000" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research" frameborder="0" style="width: 80%; margin: 10px;"></iframe>
+
+    </section>
+
+    <hr>
+
+    <section id="writings">
+        <h1 style="f">WRITINGS</h1>
+        <div class="line"></div>
+        <a class="article" href="https://webfoundation.org/2019/03/web-birthday-30" target="_blank">30 years on, what’s next ForTheWeb?</a>
+        <br>
+        <a class="article" href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web" target="_blank">How Did Tim Berners-Lee Change the World With the World Wide Web?</a>
+    </section>
+    <hr>
+
+    <section id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
+
+        <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <!--col-lg-6 - Till 1200px the width of contact_1 will be almost 50% of the screen.
+col-md-6 - From 1200px till 992px the width of contact_1 will be almost 50% of the
+screen.
+col-sm-6 - Form 992px till 768px the width of contact_1 will be almost 50% of the screen.
+col-xs-12 - From 768px till 0px the width of contact_1 will be 100% of the screen.-->
+                <a href="mailto:my@gmail.com?Subject=Hi">
+                <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a>
+
+            <a href="#">
+                <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a>
+        </div>
+
+        <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <!--col-lg-6 - Till 1200px the width of contact_2 will be almost 50% of the screen.
+col-md-6 - From 1200px till 992px the width of contact_2 will be almost 50% of the
+screen.
+col-sm-6 - Form 992px till 768px the width of contact_2 will be almost 50% of the screen.
+col-xs-12 - From 768px till 0px the width of contact_2 will be 100% of the screen.-->    
+            
+            <form>
+                <!--Form tag is an important tag; used to collect data from the user-->
+                <span>Name : </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+                <!--input tag is used for getting the input value from the user. It has the attribute set as required , which means the user cannot proceed the form until he/she has filed the input box.-->
+                <br><br>
+                <span>Comment : </span><input type="text" name="comment" required>
+                <br><br>
+                <input type="submit" value="submit" class="btn btn-success">
+                <!--Input type submit means it is a submit button for the form; add bootstrap class btn btn-success; btn will add proper padding, font-size, display:inline properties and margin to the
+button; btn-success will add the background color green and color white to the button-->
+            </form>
+        </div>
+
+    </section>
+
+    <script async src="https://drv.tw/inc/wd.js"></script>
+</body>
+
+</html>
